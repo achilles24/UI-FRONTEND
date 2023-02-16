@@ -1,0 +1,56 @@
+env:
+  browser: true
+  commonjs: true
+  jasmine: true
+  jquery: true
+  node: true
+  phantomjs: true
+  protractor: true
+
+parser: babel-eslint
+
+plugins:
+  - standard
+
+extends:
+  - standard
+
+rules:
+  indent:
+    - error
+    - 4
+
+  semi: 0
+
+  one-var: 0
+
+  comma-dangle:
+    - error
+    - arrays: only-multiline
+      objects: only-multiline
+      imports: never
+      exports: never
+      functions: never
+  
+  func-style:
+    - error
+    - declaration
+    -
+      allowArrowFunctions: true
+  
+  operator-linebreak:
+    - error
+    - after
+
+    key-spacing: 0
+    no-multi-spaces:
+      - error
+      - 
+        exceptions:
+          Property: true
+          variableDeclarator: true
+          ImportDeclaration: true
+
+  break-style: 0
+
+  no-new: 0
